@@ -1,0 +1,60 @@
+{
+  "model_name": "Random Forest Health Risk Classifier",
+  "n_samples": 12000,
+  "n_features": 17,
+  "features": [
+    "age",
+    "gender",
+    "bmi",
+    "resting_hr",
+    "systolic_bp",
+    "diastolic_bp",
+    "spo2",
+    "temperature",
+    "sleep_hours",
+    "physical_activity",
+    "smoking",
+    "alcohol",
+    "chronic_condition",
+    "chest_discomfort",
+    "shortness_of_breath",
+    "fever_symptom",
+    "symptom_count"
+  ],
+  "rf_metrics": {
+    "accuracy": 0.8525,
+    "precision": 0.8532,
+    "recall": 0.8525,
+    "f1_score": 0.8527
+  },
+  "lr_baseline_metrics": {
+    "accuracy": 0.7967,
+    "precision": 0.7969,
+    "recall": 0.7967,
+    "f1_score": 0.7956
+  },
+  "feature_importances": {
+    "spo2": 0.1832,
+    "systolic_bp": 0.1159,
+    "symptom_count": 0.1092,
+    "diastolic_bp": 0.0988,
+    "shortness_of_breath": 0.0875,
+    "age": 0.0669,
+    "chronic_condition": 0.0604,
+    "resting_hr": 0.0588,
+    "bmi": 0.0534,
+    "chest_discomfort": 0.0457,
+    "temperature": 0.0411,
+    "sleep_hours": 0.0283,
+    "smoking": 0.0168,
+    "physical_activity": 0.0122,
+    "fever_symptom": 0.0107,
+    "alcohol": 0.0064,
+    "gender": 0.0046
+  },
+  "risk_levels": {
+    "0": "Low Risk",
+    "1": "Moderate Risk",
+    "2": "High Risk"
+  }
+}
